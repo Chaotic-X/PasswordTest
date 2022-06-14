@@ -15,7 +15,7 @@ struct ContentView: View {
 	@ObservedObject private var passwordVM = Password(password: "")
 	@ObservedObject private var pwArray = PasswordArray(arrayPW: [])
 	@State private var pwCount: String = ""
-	//	@State private var pwArray: [String] = []
+    
 	var body: some View {
 		NavigationView {
 			Form{
@@ -66,7 +66,7 @@ struct ContentView: View {
 									Text(passFail ? "" : tempTest.missing)
 										.bold()
 										.font(.caption)
-										.foregroundColor(.black)
+										.foregroundColor(.cyan)
 								}
 							} else {
 								TextField("Password to test", text: $pwArray.arrayPW[index].password) { text in

@@ -8,6 +8,7 @@
 import Foundation
 
 class PasswordArray: ObservableObject, Identifiable {
+    
 	@Published var id = UUID()
 	@Published var arrayPW: [Password]
 	

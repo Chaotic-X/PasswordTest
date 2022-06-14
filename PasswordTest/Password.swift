@@ -8,6 +8,7 @@
 import Foundation
 
 class Password: ObservableObject {
+    
 	@Published var id = UUID()
 	@Published var passwordCount: Int = 0
 	@Published var password: String
